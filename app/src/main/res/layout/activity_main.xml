@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity"
+    android:gravity="center"
+    android:background="@color/white">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Next-Gen ToDo "
+        android:textColor="@color/black"
+        android:textSize="30sp"
+        />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="@string/email"
+        android:textColorHint="@color/black"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:minWidth="300dp"
+        android:id="@+id/email"
+        android:textColor="@color/black"
+
+        />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="@string/password"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:minWidth="300dp"
+        android:id="@+id/password"
+        android:textColor="@color/black"
+        android:textColorHint="@color/black"
+        />
+
+    <Button
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:text="@string/login"
+        android:layout_marginTop="20dp"
+        android:id="@+id/login"
+    />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:text="Already Have an Account" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Click here"
+            android:autoLink="web"
+            android:linksClickable="true"
+            android:layout_marginLeft="7dp"
+            android:id="@+id/hyperlinkRegister"
+            android:textColor="@color/blue"
+
+            />
+
+    </LinearLayout>
+</LinearLayout>
